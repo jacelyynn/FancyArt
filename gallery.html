@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img class="lg" src="asset/logo.png" alt=""></a>
+        <nav role="navigation">
+            <ul>
+            <!-- <li><a href="#">Artworks</a></li> -->
+            <li class="n"><a href="index.html">Home</a>
+                <li class="n"><a href="auction.html">Auctions</a>
+                <ul class="dropdown">
+                <li><a href="auction.html?ongoing">Ongoing Auctions</a></li>
+                <li><a href="auction.html?oncoming">Oncoming Auctions</a></li>
+                </ul>
+            </li>
+            <li class="n"><a href="gallery.html">Gallery</a>
+                <ul class="dropdown">
+                <li><a href="gallery.html?cubism">Cubism</a></li>
+                <li><a href="gallery.html?mixed-media">Mixed Media</a></li>
+                </ul>
+            </li>
+            <li class="n"><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="acc">
+            <a href="Register.html"><button class="login" >Register</button><br></a>
+        </div>         
+    </div>
+    <div class="content-gallery">
+        <div class="tabs">
+            <div class="buttons">
+                <button id="mixed-media-btn" class="tab-button" >Mixed Media</button>
+                <button id="cubism-btn" class="tab-button">Cubism</button>
+            </div>
+            <div class="mixed-media-tab" data-aos="fade-up">
+                <!-- mixed media 1 -->
+                <button id="mixed-media-1-btn" class="gallery-btn" data-aos="fade-up">
+                    <div class="modal-img-container">
+                        <img src="asset/mixed media/1.jpg" alt="">
+                    </div>
+                </button>
+                <div id="mixed-media-1-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="judul">Queen of Hearts</p>
+                        <img src="asset/mixed media/1.jpg" alt="">
+                        <p>Origin: America</p>
+                    </div>
+                </div>
+                <!-- mixed media 2 -->
+                <button id="mixed-media-2-btn" class="gallery-btn" data-aos="fade-up">
+                    <div class="modal-img-container">
+                        <img src="asset/mixed media/2.jpeg" alt="">
+                    </div>
+                </button>
+                <div id="mixed-media-2-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="judul">Rusty</p>
+                        <img src="asset/mixed media/2.jpeg" alt="">
+                        <p>Origin : Germany</p>
+                    </div>
+                </div>
+                <!-- mixed media 3 -->
+                <button id="mixed-media-3-btn" class="gallery-btn" data-aos="fade-up">
+                    <div class="modal-img-container">
+                        <img src="asset/mixed media/3.jpeg" alt="">
+                    </div>
+                </button>
+                <div id="mixed-media-3-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="judul">Collide</p>
+                        <img src="asset/mixed media/3.jpeg" alt="">
+                        <p>Origin : Germany</p>
+                    </div>
+                </div>
+                <!-- mixed media 4 -->
+                <button id="mixed-media-4-btn" class="gallery-btn" data-aos="fade-up">
+                    <div class="modal-img-container">
+                        <img src="asset/mixed media/4.jpg" alt="">
+                    </div>
+                </button>
+                <div id="mixed-media-4-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="judul">Butterfly</p>
+                        <img src="asset/mixed media/4.jpg" alt="">
+                        <p>Origin : Germany</p>
+                    </div>
+                </div>
+                <!-- mixed media 5 -->
+                <button id="mixed-media-5-btn" class="gallery-btn" data-aos="fade-up">
+                    <div class="modal-img-container">
+                        <img src="asset/mixed media/5.png" alt="">
+                    </div>
+                </button>
+                <div id="mixed-media-5-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="judul">Nova</p>
+                        <img src="asset/mixed media/5.png" alt="">
+                        <p>Origin : Boston</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Cubism tab -->
+            <div class="cubism-tab" data-aos="fade-up">
+                <!-- cubism 1 -->
+                <button id="cubism-1-btn" class="gallery-btn" data-aos="fade-up">
+                    <div class="modal-img-container">
+                        <img src="asset/cubism/1.png" alt="">
+                    </div>
+                </button>
+                <div id="cubism-1-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="judul">La Donna Diamante</p>
+                        <img src="asset/cubism/1.png" alt="">
+                        <p>Origin: Italy</p>
+                    </div>
+                </div>
+                <!-- cubism 2 -->
+                <button id="cubism-2-btn" class="gallery-btn" data-aos="fade-up">
+                    <div class="modal-img-container">
+                        <img src="asset/cubism/2.jpeg" alt="">
+                    </div>
+                </button>
+                <div id="cubism-2-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="judul">Maria Salvador</p>
+                        <img src="asset/cubism/2.jpeg" alt="">
+                        <p>Origin : Italy</p>
+                    </div>
+                </div>
+                <!-- cubism 3 -->
+                <button id="cubism-3-btn" class="gallery-btn" data-aos="fade-up">
+                    <div class="modal-img-container">
+                        <img src="asset/cubism/3.jpeg" alt="">
+                    </div>
+                </button>
+                <div id="cubism-3-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="judul">La Giovane Ricchezza</p>
+                        <img src="asset/cubism/3.jpeg" alt="">
+                        <p>Origin : Italy</p>
+                    </div>
+                </div>
+                <!-- cubism 4 -->
+                <button id="cubism-4-btn" class="gallery-btn" data-aos="fade-up">
+                    <div class="modal-img-container">
+                        <img src="asset/cubism/4.jpeg" alt="">
+                    </div>
+                </button>
+                <div id="cubism-4-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="judul">Siviglia Rè</p>
+                        <img src="asset/cubism/4.jpeg" alt="">
+                        <p>Origin : Italy</p>
+                    </div>
+                </div>
+                <!-- cubism 5 -->
+                <button id="cubism-5-btn" class="gallery-btn" data-aos="fade-up">
+                    <div class="modal-img-container">
+                        <img src="asset/cubism/5.jpeg" alt="">
+                    </div>
+                </button>
+                <div id="cubism-5-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="judul">Corrida Messicana</p>
+                        <img src="asset/cubism/5.jpeg" alt="">
+                        <p>Origin : Italy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerleft">
+            Find us in social media: <br>
+            <img class="logofooter" src="asset/fb.png" alt="fb"> : Fancy Art <br>
+            <img class="logofooter" src="asset/insta.png" alt="fb"> : Fancy_Art <br>
+            <img class="logofooter" src="asset/twitter.png" alt="fb"> : Fancy.Art <br>
+        </div>
+        <div class="vlinefooter"></div> <br>
+        <div class="footerright">
+            Fancy Art <br>
+            &copy; 2020 Fancy Art Gallery. All rights reserved.
+        </div>
+    </div>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>

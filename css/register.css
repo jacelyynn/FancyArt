@@ -1,0 +1,331 @@
+:root{
+    --primary-color: #F4F0E9;
+    --secondary-color: rgb(231, 226, 216);
+    --text-color: #233e47;
+    --text-secondary-color: #ff6e78;
+    --text-third-color: rgb(88, 88, 88);
+    --btn-active:#e46e76;
+    --header-font: 'Playfair Display', Georgia;
+    --desc-font: 'Open Sans',  -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body{
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--header-font);
+    /* background-color: var(--primary-color); */
+    overflow-x: hidden;
+    color: var(--text-third-color);
+}
+
+.grdnt{
+    background-image: linear-gradient(to bottom, white, var(--primary-color));
+    height: 700px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.header{
+    background-color: white;
+    z-index: 1;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    margin-top: 0;
+    padding-top: 0;
+    display: block;
+    justify-content: space-evenly;
+}
+
+
+.acc{
+    width: 5vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.lg{
+    margin-left: 2vw;
+    float: left;
+    max-width: 5vw;
+    max-height: 10vh;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-third-color);
+}
+  
+nav{
+    margin-top: .7rem;
+    font-family: var(--desc-font);
+    font-size: .8rem;
+    position: relative;
+    width: 80%;
+    display: inline-block;
+}
+
+.n{
+    font-weight: bold;
+    width: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    justify-content: space-evenly;
+    height: 20px;
+    text-align: center;
+}
+  
+li {
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    padding: .2rem;
+    display: inline-block;
+    
+}
+    
+li a {
+    color: var(--text-third-color);
+    display: inline-block;
+}
+
+li:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    cursor: pointer;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    display: none;
+    margin-left: none;
+}
+
+ul li:hover > ul, ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+  
+.login{
+    background-color: transparent;
+    width: 10vw;
+    height: 7vh;
+    max-width: 100px;
+    min-width: 70px;
+    min-height: 25px;
+    border-radius: 5px;
+    color: var(--text-third-color);
+    border: none;
+    opacity: .9;
+    border: 2px solid var(--primary-color);
+}
+
+.acc{
+    padding-top: 2vh;
+}
+
+.login:hover{
+    border-color: var(--text-color);
+    color: var(--text-color);
+    transition: .5s ease-in-out;
+    opacity: 1;
+}
+
+.body{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 54%;
+    transform: translate(-50%, -50%);
+    background-color: none;
+}
+
+.inpt{
+    border: none;
+    border-bottom: 2px solid #233e47;
+    width: 400px;
+    border-radius: 3px;
+    background-color: var(--primary-color);
+}
+
+textarea{
+    width: 400px;
+    height: 75px;
+    border: none;
+    border-bottom: 2px solid #233e47;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+select{
+    background-color: var(--primary-color);
+}
+
+.boxbtn{
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+#alert{
+    background-color: #233e47;
+    color: white;
+    width: 400px;
+    text-align: center;
+    border-radius: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+h1{
+    font-family: var(--header-font);
+}
+
+@media only screen and (min-width: 800px) {
+    form{
+        font-family: var(--desc-font);
+        padding: 30px;
+        padding-top: 1px;
+        background-color: var(--primary-color);
+        height: 710px;
+    }
+
+    button{
+        background-color: transparent;
+        width: 10vw;
+        height: 5vh;
+        max-width: 100px;
+        min-width: 70px;
+        min-height: 25px;
+        /* border: 1px solid var(--text-color); */
+        border-radius: 5px;
+        color: var(--text-third-color);
+        border: none;
+        opacity: .9;
+        border: 2px solid var(--secondary-color);
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    button:hover{
+        border-color: var(--text-color);
+        color: var(--text-color);
+        transition: .5s ease-in-out;
+        opacity: 1;
+    }
+    
+    img{
+        height: 740px;
+    }
+}
+
+.footer{
+    background-color: var(--text-color);
+    color: white;
+    padding: 10px;
+    height: auto;
+    font-size: .7rem;
+    margin-top: 250px;
+    font-family: var(--desc-font);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.logofooter{
+    width: 15px;
+    height: 15px;
+}
+
+.footerleft{
+    text-align: right;
+    width: 40%;
+    padding-right: 5%;
+}
+
+.footerright{
+    width: 40%;
+    padding-left: 5%;
+}
+
+.vlinefooter{
+    border-left: 6px solid white;
+    height: 100px;
+}
+
+@media only screen and (max-width: 1500px) {
+    form{
+        font-family: var(--desc-font);
+        padding: 30px;
+        padding-top: 10px;
+        background-color: var(--primary-color);
+        height: 760px;
+    }
+
+    button{
+        background-color: transparent;
+        width: 60vw;
+        height: 5vh;
+        max-width: 350px;
+        min-width: 70px;
+        min-height: 25px;
+        /* border: 1px solid var(--text-color); */
+        border-radius: 5px;
+        color: var(--text-third-color);
+        border: none;
+        opacity: .9;
+        border: 2px solid var(--secondary-color);
+        margin-bottom: 10px;
+    }
+
+    button:hover{
+        border-color: var(--text-color);
+        color: var(--text-color);
+        transition: .5s ease-in-out;
+        opacity: 1;
+    }
+    
+    img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .vlinefooter{
+        display: none;
+    }
+
+    .footer{
+        display: block;
+    }
+
+    .footerleft, .footerright{
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+}
